@@ -246,10 +246,47 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* About Section */
+.about-photo-wrapper {
+    text-align: center;
+    padding: 2rem;
+}
+
+.about-photo-placeholder {
+    background: var(--light-color);
+    border: 3px dashed #e2e8f0;
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.about-photo-placeholder:hover {
+    border-color: var(--primary-color);
+    background: rgba(99, 102, 241, 0.05);
+}
+
+.about-photo-placeholder i {
+    font-size: 5rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.about-photo-placeholder p {
+    color: var(--text-light);
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.about-content {
+    padding: 2rem 0;
+}
+
 .about-content .lead {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.8;
     color: var(--text-dark);
+    font-weight: 400;
 }
 
 /* Timeline */
