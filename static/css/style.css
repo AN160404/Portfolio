@@ -279,7 +279,7 @@ h1, h2, h3, h4, h5, h6 {
 .photo-placeholder {
     width: 100%;
     height: 100%;
-    background: #000000;
+    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -290,7 +290,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .photo-placeholder i {
     font-size: 4rem;
-    color: var(--text-light);
+    color: #ffffff;
     transition: all 0.3s ease;
 }
 
@@ -312,7 +312,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     width: 40px;
     height: 40px;
-    background: #000000;
+    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -324,7 +324,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .floating-icon i {
     font-size: 1.2rem;
-    color: var(--primary-color);
+    color: #ffffff;
 }
 
 .icon-1 {
@@ -384,7 +384,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .photo-caption p {
-    color: var(--text-light);
+    color: #e2e8f0;
     font-weight: 500;
     margin-bottom: 0;
     font-size: 0.9rem;
@@ -435,7 +435,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .timeline-content {
-    background: #000000;
+    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: var(--shadow-md);
@@ -444,7 +444,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .timeline-content h4 {
-    color: var(--dark-color);
+    color: #ffffff;
     margin-bottom: 0.5rem;
 }
 
@@ -455,14 +455,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .timeline-date {
-    color: var(--text-light);
+    color: #e2e8f0;
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
 /* Project Cards */
 .project-card {
-    background: #000000;
+    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
     border-radius: 15px;
     padding: 2rem;
     box-shadow: var(--shadow-md);
@@ -484,12 +484,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-header h4 {
-    color: var(--dark-color);
+    color: #ffffff;
     margin-bottom: 0;
 }
 
 .project-date {
-    color: var(--text-light);
+    color: #e2e8f0;
     font-size: 0.9rem;
     font-weight: 500;
 }
@@ -515,7 +515,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Skills */
 .skill-category {
-    background: #000000;
+    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
     padding: 2rem;
     border-radius: 15px;
     box-shadow: var(--shadow-md);
@@ -530,7 +530,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skill-category h5 {
-    color: var(--dark-color);
+    color: #ffffff;
     margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
@@ -561,7 +561,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Achievement Cards */
 .achievement-card {
-    background: #000000;
+    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
     padding: 2rem;
     border-radius: 15px;
     box-shadow: var(--shadow-md);
@@ -592,13 +592,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .achievement-card h5 {
-    color: var(--dark-color);
+    color: #ffffff;
     margin-bottom: 1rem;
 }
 
 /* Publication Cards */
 .publication-card {
-    background: #000000;
+    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
     padding: 2rem;
     border-radius: 15px;
     box-shadow: var(--shadow-md);
@@ -626,12 +626,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .publication-card h5 {
-    color: var(--dark-color);
+    color: #ffffff;
     margin-bottom: 1rem;
 }
 
 .publication-details {
-    color: var(--text-light);
+    color: #e2e8f0;
     margin-bottom: 0.5rem;
 }
 
@@ -642,7 +642,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Certification Cards */
 .cert-card {
-    background: #000000;
+    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
     padding: 1.5rem;
     border-radius: 15px;
     box-shadow: var(--shadow-md);
@@ -673,13 +673,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cert-card h6 {
-    color: var(--dark-color);
+    color: #ffffff;
     margin-bottom: 0.5rem;
     font-size: 0.95rem;
 }
 
 .cert-card p {
-    color: var(--text-light);
+    color: #e2e8f0;
     font-size: 0.9rem;
     margin-bottom: 0;
 }
