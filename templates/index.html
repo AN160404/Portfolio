@@ -67,24 +67,6 @@
                 <div class="hero-content">
                     <h1 class="hero-name mb-3">Atia Naim</h1>
                     <p class="hero-tagline mb-4">Aspiring AI & Data Science Engineer | Generative AI | LLMs | Side-Channel Analysis</p>
-                    <div class="contact-info mb-4">
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+91 7413024000</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>atianaim87@gmail.com</span>
-                        </div>
-                    </div>
-                    <div class="social-links mb-4">
-                        <a href="https://github.com/AN160404" target="_blank" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://linkedin.com/in/atia-naim" target="_blank" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
                     <a href="#about" class="btn btn-primary btn-lg">Explore My Work</a>
                 </div>
             </div>
@@ -431,34 +413,39 @@
             <p class="section-subtitle">Let's discuss opportunities and collaborate on innovative projects</p>
         </div>
         <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <div class="contact-form-wrapper">
-                    <form method="POST" action="{{ url_for('contact') }}" class="contact-form">
-                        {{ form.hidden_tag() }}
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                {{ form.name.label(class="form-label") }}
-                                {{ form.name(class="form-control") }}
+            <div class="col-lg-6 mx-auto">
+                <div class="contact-links-wrapper">
+                    <div class="contact-links">
+                        <a href="mailto:atianaim87@gmail.com" class="contact-link email-link">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
                             </div>
-                            <div class="col-md-6 mb-3">
-                                {{ form.email.label(class="form-label") }}
-                                {{ form.email(class="form-control") }}
+                            <div class="contact-info">
+                                <h4>Email</h4>
+                                <p>atianaim87@gmail.com</p>
                             </div>
-                        </div>
-                        <div class="mb-3">
-                            {{ form.subject.label(class="form-label") }}
-                            {{ form.subject(class="form-control") }}
-                        </div>
-                        <div class="mb-3">
-                            {{ form.message.label(class="form-label") }}
-                            {{ form.message(class="form-control", rows="5") }}
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary btn-lg">
-                                <i class="fas fa-paper-plane me-2"></i>Send Message
-                            </button>
-                        </div>
-                    </form>
+                        </a>
+                        
+                        <a href="https://github.com/AN160404" target="_blank" class="contact-link github-link">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>GitHub</h4>
+                                <p>github.com/AN160404</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://linkedin.com/in/atia-naim" target="_blank" class="contact-link linkedin-link">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>LinkedIn</h4>
+                                <p>linkedin.com/in/atia-naim</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
