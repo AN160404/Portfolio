@@ -251,7 +251,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* About Section */
 #about {
-    background: linear-gradient(135deg, #0d001a 0%, #1a0033 50%, #0d001a 100%);
+    background: transparent;
 }
 .about-photo-wrapper {
     text-align: center;
@@ -519,7 +519,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Experience Section */
 #experience {
-    background: linear-gradient(135deg, #1a0033 0%, #0d001a 50%, #1a0033 100%);
+    background: transparent;
 }
 
 /* Skills */
@@ -771,7 +771,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Publications Section */
 #publications {
-    background: linear-gradient(135deg, #1a0033 0%, #0d001a 50%, #1a0033 100%);
+    background: transparent;
 }
 
 /* Footer */
@@ -899,7 +899,7 @@ html {
 
 /* Background patterns */
 .bg-light {
-    background: linear-gradient(135deg, #1a0033 0%, #0d001a 50%, #1a0033 100%) !important;
+    background: transparent !important;
 }
 
 /* Global background for all pages */
