@@ -351,6 +351,18 @@ h1, h2, h3, h4, h5, h6 {
     animation-delay: 2.1s;
 }
 
+.icon-5 {
+    top: 50%;
+    left: -20px;
+    animation-delay: 2.8s;
+}
+
+.icon-6 {
+    top: 50%;
+    right: -20px;
+    animation-delay: 3.5s;
+}
+
 @keyframes floatIcon {
     0%, 100% {
         transform: translateY(0px) rotate(0deg);
