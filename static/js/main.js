@@ -14,17 +14,19 @@ function initNavigation() {
     const navbar = document.getElementById('mainNav');
     const navLinks = document.querySelectorAll('.nav-link');
 
-    // Handle navbar background on scroll
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 100) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
+    // Handle navbar background on scroll (only if navbar exists)
+    if (navbar) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
 
-        // Update active nav link
-        updateActiveNavLink();
-    });
+            // Update active nav link
+            updateActiveNavLink();
+        });
+    }
 
     // Update active navigation link based on scroll position
     function updateActiveNavLink() {
