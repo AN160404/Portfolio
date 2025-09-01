@@ -1,0 +1,489 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#home">
+            <span class="fw-bold">Atia Naim</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#achievements">Achievements</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#publications">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Flash Messages -->
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        <div class="flash-messages">
+            {% for category, message in messages %}
+                <div class="alert alert-{{ 'success' if category == 'success' else 'danger' }} alert-dismissible fade show" role="alert">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endwith %}
+
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+    <div class="hero-background"></div>
+    <div class="container">
+        <div class="row min-vh-100 align-items-center">
+            <div class="col-lg-8 mx-auto text-center">
+                <div class="hero-content">
+                    <h1 class="hero-name mb-3">Atia Naim</h1>
+                    <p class="hero-tagline mb-4">Aspiring AI & Data Science Engineer | Generative AI | LLMs | Side-Channel Analysis</p>
+                    <div class="contact-info mb-4">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 7413024000</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>atianaim87@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="social-links mb-4">
+                        <a href="https://github.com/AN160404" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/atia-naim" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <a href="#about" class="btn btn-primary btn-lg">Explore My Work</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="section-header text-center mb-5">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="about-content">
+                    <p class="lead text-center">
+                        Final year B.Tech Computer Science Engineering student at Amity University, passionate about AI, Data Science, NLP, and Generative AI. Skilled in building AI-driven frameworks, data pipelines, and innovative applications across healthcare, cryptography, and tourism domains. Experienced in research and internships at DRDO and active in community initiatives.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="section-padding bg-light">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title">Education</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>B.Tech, Computer Science Engineering</h4>
+                            <h5 class="text-primary">Amity University, Noida</h5>
+                            <p class="timeline-date">Aug 2022 – Jun 2026</p>
+                            <p>CGPA: 8.69/10</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>CBSE Senior Secondary</h4>
+                            <h5 class="text-primary">Ahlcon Public School</h5>
+                            <p class="timeline-date">2020 – 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="section-padding">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title">Experience</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>DRDO Intern</h4>
+                            <p class="timeline-date">Jun – Jul 2025</p>
+                            <p>Researched and implemented Conditional GANs for Side-Channel Analysis, tested on AES cryptographic datasets.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Community Volunteer</h4>
+                            <h5 class="text-primary">Kind Beings NGO</h5>
+                            <p class="timeline-date">Dec 2024 – Mar 2025</p>
+                            <p>Conducted literacy workshops, sustainable learning initiatives, and elderly engagement programs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section-padding bg-light">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title">Projects</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h4>Medical Misconceptions Detector</h4>
+                        <span class="project-date">Oct 2024 – Jan 2025</span>
+                    </div>
+                    <div class="project-summary">
+                        <p>Agentic LLM framework for validating medical misinformation; achieved 94% accuracy.</p>
+                    </div>
+                    <div class="project-details" style="display: none;">
+                        <p>Developed an advanced AI system using Large Language Models to detect and validate medical misinformation. The framework employs multiple validation agents and achieves 94% accuracy in identifying false medical claims.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">LLMs</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Healthcare</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-primary btn-sm toggle-details">View Details</button>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h4>Tranquil Trails</h4>
+                        <span class="project-date">May – Jul 2024</span>
+                    </div>
+                    <div class="project-summary">
+                        <p>RAG-based tourism chatbot with TTS and multilingual query support.</p>
+                    </div>
+                    <div class="project-details" style="display: none;">
+                        <p>Built an intelligent tourism chatbot using Retrieval-Augmented Generation (RAG) technology. Features include text-to-speech capabilities, multilingual support, and personalized travel recommendations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">Chatbot</span>
+                            <span class="tech-tag">TTS</span>
+                            <span class="tech-tag">Multilingual</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-primary btn-sm toggle-details">View Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section-padding">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title">Skills</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="skill-category">
+                    <h5><i class="fas fa-code"></i> Languages</h5>
+                    <div class="skill-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="skill-category">
+                    <h5><i class="fas fa-cogs"></i> Frameworks</h5>
+                    <div class="skill-list">
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">HuggingFace</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Pandas</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="skill-category">
+                    <h5><i class="fas fa-database"></i> Databases</h5>
+                    <div class="skill-list">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="skill-category">
+                    <h5><i class="fas fa-brain"></i> Expertise</h5>
+                    <div class="skill-list">
+                        <span class="skill-tag">LLMs</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                        <span class="skill-tag">Data Science</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Generative AI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Achievements Section -->
+<section id="achievements" class="section-padding bg-light">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title">Leadership & Achievements</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h5>Emcee at Confluence 2025</h5>
+                    <p>Hosted major event with 150+ participants</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h5>Hackfest Participant</h5>
+                    <p>Amity x GeeksforGeeks, Oct 2024</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h5>Student Coordinator</h5>
+                    <p>Amity Youth Fest 2024 - 20+ events, 15,000+ attendees</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Publications Section -->
+<section id="publications" class="section-padding">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title">Publications & Patents</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="publication-card">
+                    <div class="publication-type patent">
+                        <i class="fas fa-patent"></i>
+                        <span>Patent</span>
+                    </div>
+                    <h5>System for Real-Time Misconception Detection and Validation</h5>
+                    <p class="publication-date">May 2025</p>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="publication-card">
+                    <div class="publication-type book">
+                        <i class="fas fa-book"></i>
+                        <span>Book Chapter</span>
+                    </div>
+                    <h5>Beyond Reality: Unleashing the Potential of AR and VR</h5>
+                    <p class="publication-details">Co-Author, Cambridge Scholar</p>
+                    <p class="publication-date">Oct 2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="section-padding bg-light">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title">Certifications</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h6>Oracle Cloud Infrastructure Generative AI Professional</h6>
+                    <p>Aug 2025</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h6>Oracle Cloud Infrastructure AI Foundation Associate</h6>
+                    <p>Aug 2025</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h6>MongoDB</h6>
+                    <p>Coursera, Jan 2025</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h6>NPTEL Software Conceptual Design</h6>
+                    <p>Gold Badge, Nov 2024</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-python"></i>
+                    </div>
+                    <h6>NPTEL Python for Data Science</h6>
+                    <p>Apr 2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section-padding">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">Let's discuss opportunities and collaborate on innovative projects</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="contact-form-wrapper">
+                    <form method="POST" action="{{ url_for('contact') }}" class="contact-form">
+                        {{ form.hidden_tag() }}
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                {{ form.name.label(class="form-label") }}
+                                {{ form.name(class="form-control") }}
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                {{ form.email.label(class="form-label") }}
+                                {{ form.email(class="form-control") }}
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            {{ form.subject.label(class="form-label") }}
+                            {{ form.subject(class="form-control") }}
+                        </div>
+                        <div class="mb-3">
+                            {{ form.message.label(class="form-label") }}
+                            {{ form.message(class="form-control", rows="5") }}
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="footer-social mb-3">
+                    <a href="https://github.com/AN160404" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/atia-naim" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:atianaim87@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <p>&copy; 2025 Atia Naim. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock %}
