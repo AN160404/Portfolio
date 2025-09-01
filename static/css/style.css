@@ -249,6 +249,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* About Section */
+#about {
+    background: linear-gradient(135deg, #0d001a 0%, #1a0033 50%, #0d001a 100%);
+}
 .about-photo-wrapper {
     text-align: center;
     padding: 2rem;
@@ -513,6 +516,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1rem;
 }
 
+/* Experience Section */
+#experience {
+    background: linear-gradient(135deg, #1a0033 0%, #0d001a 50%, #1a0033 100%);
+}
+
 /* Skills */
 .skill-category {
     background: #000000;
@@ -760,6 +768,11 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-1px);
 }
 
+/* Publications Section */
+#publications {
+    background: linear-gradient(135deg, #1a0033 0%, #0d001a 50%, #1a0033 100%);
+}
+
 /* Footer */
 .footer {
     background: var(--dark-color);
@@ -885,6 +898,5 @@ html {
 
 /* Background patterns */
 .bg-light {
-    background-color: #f8fafc !important;
-    background-image: url('data:image/svg+xml,<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><g fill="%236366f1" fill-opacity="0.03"><path d="M20 20c0 4.4-3.6 8-8 8s-8-3.6-8-8 3.6-8 8-8 8 3.6 8 8zm0-20c0 4.4-3.6 8-8 8s-8-3.6-8-8 3.6-8 8-8 8 3.6 8 8z"/></g></svg>');
+    background: linear-gradient(135deg, #1a0033 0%, #0d001a 50%, #1a0033 100%) !important;
 }
