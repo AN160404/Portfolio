@@ -1,20 +1,20 @@
 /* Custom CSS for Atia Naim Portfolio */
 
 :root {
-    --primary-color: #8b5cf6;
-    --secondary-color: #a855f7;
-    --accent-color: #c084fc;
-    --dark-color: #0f0f23;
-    --light-color: #1a1a2e;
-    --text-dark: #e2e8f0;
-    --text-light: #94a3b8;
-    --gradient-1: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
-    --gradient-2: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-    --gradient-3: linear-gradient(135deg, #a855f7 0%, #c084fc 100%);
-    --shadow-sm: 0 1px 2px 0 rgba(139, 92, 246, 0.1);
-    --shadow-md: 0 4px 6px -1px rgba(139, 92, 246, 0.2);
-    --shadow-lg: 0 10px 15px -3px rgba(139, 92, 246, 0.3);
-    --shadow-xl: 0 20px 25px -5px rgba(139, 92, 246, 0.4);
+    --primary-color: #a855f7;
+    --secondary-color: #c084fc;
+    --accent-color: #e879f9;
+    --dark-color: #000000;
+    --light-color: #111111;
+    --text-dark: #ffffff;
+    --text-light: #e2e8f0;
+    --gradient-1: linear-gradient(135deg, #a855f7 0%, #c084fc 100%);
+    --gradient-2: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
+    --gradient-3: linear-gradient(135deg, #c084fc 0%, #e879f9 100%);
+    --shadow-sm: 0 1px 2px 0 rgba(168, 85, 247, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(168, 85, 247, 0.4);
+    --shadow-lg: 0 10px 15px -3px rgba(168, 85, 247, 0.5);
+    --shadow-xl: 0 20px 25px -5px rgba(168, 85, 247, 0.6);
 }
 
 * {
@@ -26,8 +26,8 @@
 body {
     font-family: 'Happy Monkey', cursive;
     line-height: 1.6;
-    color: #e2e8f0;
-    background-color: #0f0f23;
+    color: #ffffff;
+    background-color: #000000;
 }
 
 /* Typography */
@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Tomorrow', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--text-dark);
+    color: #ffffff;
     margin-bottom: 1rem;
 }
 
@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Section */
 .hero-section {
     min-height: 100vh;
-    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+    background: linear-gradient(135deg, #000000 0%, #1a0033 50%, #000000 100%);
     position: relative;
     display: flex;
     align-items: center;
@@ -279,7 +279,7 @@ h1, h2, h3, h4, h5, h6 {
 .photo-placeholder {
     width: 100%;
     height: 100%;
-    background: var(--light-color);
+    background: #000000;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -312,7 +312,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     width: 40px;
     height: 40px;
-    background: var(--light-color);
+    background: #000000;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -385,7 +385,7 @@ h1, h2, h3, h4, h5, h6 {
 .about-content .lead {
     font-size: 1.3rem;
     line-height: 1.8;
-    color: var(--text-dark);
+    color: #ffffff;
     font-weight: 400;
 }
 
@@ -423,7 +423,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .timeline-content {
-    background: var(--light-color);
+    background: #000000;
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: var(--shadow-md);
@@ -450,12 +450,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Project Cards */
 .project-card {
-    background: var(--light-color);
+    background: #000000;
     border-radius: 15px;
     padding: 2rem;
     box-shadow: var(--shadow-md);
     transition: all 0.3s ease;
-    border: 1px solid rgba(139, 92, 246, 0.3);
+    border: 2px solid var(--primary-color);
     height: 100%;
 }
 
@@ -503,7 +503,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Skills */
 .skill-category {
-    background: var(--light-color);
+    background: #000000;
     padding: 2rem;
     border-radius: 15px;
     box-shadow: var(--shadow-md);
@@ -549,7 +549,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Achievement Cards */
 .achievement-card {
-    background: var(--light-color);
+    background: #000000;
     padding: 2rem;
     border-radius: 15px;
     box-shadow: var(--shadow-md);
@@ -586,7 +586,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Publication Cards */
 .publication-card {
-    background: var(--light-color);
+    background: #000000;
     padding: 2rem;
     border-radius: 15px;
     box-shadow: var(--shadow-md);
@@ -630,7 +630,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Certification Cards */
 .cert-card {
-    background: var(--light-color);
+    background: #000000;
     padding: 1.5rem;
     border-radius: 15px;
     box-shadow: var(--shadow-md);
