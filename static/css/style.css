@@ -901,3 +901,36 @@ html {
 .bg-light {
     background: linear-gradient(135deg, #1a0033 0%, #0d001a 50%, #1a0033 100%) !important;
 }
+
+/* Global background for all pages */
+.global-bg {
+    background: linear-gradient(135deg, #0a0a0f, #1a0b1f, #2a0f3d);
+    color: #f5f5f5;
+    font-family: 'Tomorrow', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure wrapper takes full height */
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container adjustments inside sections */
+section .container {
+    color: #f5f5f5; /* Light text for readability */
+    position: relative;
+    z-index: 2;
+}
+
+/* Optional: give sections subtle overlays if needed */
+.hero-section,
+.about-section,
+.projects-section,
+.contact-section {
+    padding: 60px 0;
+}
+
