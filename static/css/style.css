@@ -24,7 +24,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Happy Monkey', cursive;
     line-height: 1.6;
     color: var(--text-dark);
     background-color: #fff;
@@ -32,11 +32,13 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Tomorrow', sans-serif;
     font-weight: 600;
     line-height: 1.3;
 }
 
 .section-title {
+    font-family: 'Tomorrow', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--dark-color);
@@ -143,8 +145,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-name {
+    font-family: 'Limelight', cursive;
     font-size: 4rem;
-    font-weight: 700;
+    font-weight: 400;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     animation: fadeInUp 1s ease-out;
@@ -714,6 +717,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Buttons */
 .btn-primary {
+    font-family: 'Tomorrow', sans-serif;
     background: var(--gradient-1);
     border: none;
     border-radius: 25px;
@@ -728,6 +732,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-outline-primary {
+    font-family: 'Tomorrow', sans-serif;
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
     border-radius: 20px;
