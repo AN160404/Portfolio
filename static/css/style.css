@@ -250,6 +250,11 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 2px;
 }
 
+.section-divider.mx-0 {
+    margin-left: 0;
+    margin-right: auto;
+}
+
 /* About Section */
 #about {
     background: transparent;
@@ -899,8 +904,8 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(135deg, #000000 0%, #1a0033 50%, #000000 100%);
     border: 2px solid var(--primary-color);
     border-radius: 20px;
-    width: 90%;
-    max-width: 800px;
+    width: 95%;
+    max-width: 1200px;
     max-height: 90vh;
     overflow-y: auto;
     position: relative;
@@ -1041,6 +1046,94 @@ h1, h2, h3, h4, h5, h6 {
 .credential-value {
     color: white;
     font-weight: 600;
+}
+
+/* Certificate Modal Layout */
+.cert-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.cert-image-section {
+    position: sticky;
+    top: 0;
+}
+
+.cert-image-container {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 1rem;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.cert-image-container embed {
+    border-radius: 8px;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.cert-image-actions {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.cert-details-section {
+    padding-left: 1rem;
+}
+
+/* Responsive adjustments for certificate modal */
+@media (max-width: 992px) {
+    .cert-content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .cert-details-section {
+        padding-left: 0;
+    }
+    
+    .cert-modal-content {
+        width: 95%;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cert-image-container embed {
+        height: 300px;
+    }
+    
+    .cert-modal-content {
+        width: 98%;
+        margin: 1rem;
+    }
+}
+
+/* Education Section Image */
+.education-image-container {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.education-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.3);
+    transition: all 0.3s ease;
+}
+
+.education-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(168, 85, 247, 0.4);
+}
+
+@media (max-width: 768px) {
+    .education-image-container {
+        padding: 1rem 0;
+        margin-top: 2rem;
+    }
 }
 
 /* Smooth scrolling */

@@ -433,68 +433,80 @@ function initCertificationModal() {
     // Certification data
     const certData = {
         'oracle-gen-ai': {
-            title: 'Oracle Cloud Infrastructure Generative AI Professional',
-            date: 'August 2025',
+            title: 'Oracle Cloud Infrastructure 2025 Certified Generative AI Professional',
+            date: 'August 22, 2025',
             icon: 'fas fa-cloud',
+            certificateFile: '/static/certificates/oracle-gen-ai.pdf',
             description: 'Advanced certification demonstrating expertise in Oracle Cloud\'s Generative AI services, including large language models, prompt engineering, and AI application development.',
             skills: ['Generative AI', 'Oracle Cloud', 'LLMs', 'Prompt Engineering', 'AI Services', 'Cloud Computing'],
             credentials: {
-                'Certification ID': 'OCI-GAI-PRO-2025',
-                'Valid Until': 'August 2027',
+                'Certification ID': '321729245OCI25GAIOCP',
+                'Valid Until': 'August 22, 2027',
                 'Issued By': 'Oracle Corporation',
                 'Level': 'Professional'
             }
         },
         'oracle-ai-foundation': {
-            title: 'Oracle Cloud Infrastructure AI Foundation Associate',
-            date: 'August 2025',
+            title: 'Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate',
+            date: 'August 17, 2025',
             icon: 'fas fa-robot',
+            certificateFile: '/static/certificates/oracle-ai-foundation.pdf',
             description: 'Foundational certification covering Oracle Cloud AI services, machine learning fundamentals, and AI infrastructure deployment.',
             skills: ['Oracle Cloud', 'AI Foundations', 'Machine Learning', 'Cloud Infrastructure', 'Data Science'],
             credentials: {
-                'Certification ID': 'OCI-AIF-ASC-2025',
-                'Valid Until': 'August 2027',
+                'Certification ID': '321729245OCI25AICFA',
+                'Issue Date': 'August 17, 2025',
                 'Issued By': 'Oracle Corporation',
                 'Level': 'Associate'
             }
         },
         'mongodb': {
-            title: 'MongoDB Database Administration',
-            date: 'January 2025',
+            title: 'Introduction to MongoDB',
+            date: 'December 31, 2024',
             icon: 'fas fa-database',
-            description: 'Comprehensive certification in MongoDB database administration, covering database design, performance optimization, and advanced querying techniques.',
-            skills: ['MongoDB', 'NoSQL', 'Database Design', 'Performance Tuning', 'Data Modeling', 'Aggregation'],
+            certificateFile: '/static/certificates/mongodb.pdf',
+            description: 'Comprehensive certification in MongoDB database fundamentals, covering database design, NoSQL concepts, and MongoDB operations through Coursera.',
+            skills: ['MongoDB', 'NoSQL', 'Database Design', 'Data Modeling', 'Database Operations', 'Document Databases'],
             credentials: {
                 'Platform': 'Coursera',
-                'Completion Date': 'January 2025',
-                'Issued By': 'MongoDB University',
-                'Course Hours': '40+ Hours'
+                'Completion Date': 'December 31, 2024',
+                'Issued By': 'MongoDB Inc.',
+                'Verification': 'CS6ZYITXD88G',
+                'Verify At': 'https://coursera.org/verify/CS6ZYITXD88G'
             }
         },
         'nptel-design': {
-            title: 'NPTEL Software Conceptual Design',
-            date: 'November 2024',
+            title: 'Software Conceptual Design',
+            date: 'Aug-Sep 2024',
             icon: 'fas fa-medal',
-            description: 'Gold Badge certification in software conceptual design, covering advanced design patterns, system architecture, and software engineering principles.',
-            skills: ['Software Design', 'Design Patterns', 'System Architecture', 'UML', 'Software Engineering'],
+            certificateFile: '/static/certificates/nptel-design.pdf',
+            description: 'Excellent performance certification in software conceptual design, covering advanced design patterns, system architecture, and software engineering principles with a score of 92.',
+            skills: ['Software Design', 'Design Patterns', 'System Architecture', 'UML', 'Software Engineering', 'Conceptual Modeling'],
             credentials: {
-                'Badge': 'Gold',
-                'Score': '85%+',
+                'Final Score': '92/100',
+                'Assignment Score': '23.17/25',
+                'Exam Score': '68.51/75',
+                'Roll Number': 'NPTEL24CS127S551300772',
+                'Course Duration': '4 weeks',
                 'Issued By': 'NPTEL (IIT/IISc)',
-                'Course Duration': '12 Weeks'
+                'Credits': '1 or 2 recommended'
             }
         },
         'nptel-python': {
-            title: 'NPTEL Python for Data Science',
-            date: 'April 2024',
+            title: 'Python for Data Science',
+            date: 'Jan-Feb 2024',
             icon: 'fas fa-python',
-            description: 'Comprehensive certification in Python programming for data science applications, including data analysis, visualization, and machine learning fundamentals.',
+            certificateFile: '/static/certificates/nptel-python.pdf',
+            description: 'Comprehensive certification in Python programming for data science applications, including data analysis, visualization, and machine learning fundamentals with a score of 69.',
             skills: ['Python', 'Data Science', 'Data Analysis', 'Data Visualization', 'Pandas', 'NumPy', 'Matplotlib'],
             credentials: {
-                'Completion Date': 'April 2024',
+                'Final Score': '69/100',
+                'Assignment Score': '24/25',
+                'Exam Score': '45.41/75',
+                'Roll Number': 'NPTEL24CS54S658605187',
+                'Course Duration': '4 weeks',
                 'Issued By': 'NPTEL (IIT/IISc)',
-                'Course Duration': '12 Weeks',
-                'Final Score': 'Distinction'
+                'Credits': '1 or 2 recommended'
             }
         }
     };
@@ -535,6 +547,19 @@ function initCertificationModal() {
         document.getElementById('modalTitle').textContent = data.title;
         document.getElementById('modalSubtitle').textContent = data.title;
         document.getElementById('modalDate').textContent = `Completed: ${data.date}`;
+        
+        // Certificate image
+        const certImage = document.getElementById('certImage');
+        const viewCertLink = document.getElementById('viewCertLink');
+        if (data.certificateFile) {
+            certImage.src = data.certificateFile;
+            certImage.style.display = 'block';
+            viewCertLink.href = data.certificateFile;
+            viewCertLink.style.display = 'inline-block';
+        } else {
+            certImage.style.display = 'none';
+            viewCertLink.style.display = 'none';
+        }
         
         // Description
         const descDiv = document.getElementById('modalDescription');
