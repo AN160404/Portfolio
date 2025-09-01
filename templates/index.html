@@ -124,12 +124,19 @@
 <!-- Experience Section -->
 <section id="experience" class="section-padding">
     <div class="container">
-        <div class="section-header text-center mb-5">
-            <h2 class="section-title">Experience</h2>
-            <div class="section-divider"></div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6">
+                <div class="experience-image-container">
+                    <img src="{{ url_for('static', filename='images/experience-illustration.png') }}" 
+                         alt="Professional Experience Illustration" 
+                         class="experience-image">
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-6">
+                <div class="section-header mb-5 text-right">
+                    <h2 class="section-title text-right">Experience</h2>
+                    <div class="section-divider ms-auto"></div>
+                </div>
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
