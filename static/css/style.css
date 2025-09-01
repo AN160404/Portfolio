@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Section */
 .hero-section {
     min-height: 100vh;
-    background: linear-gradient(135deg, #000000 0%, #1a0033 50%, #000000 100%);
+    background: transparent;
     position: relative;
     display: flex;
     align-items: center;
@@ -235,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Sections */
 .section-padding {
-    padding: 80px 0;
+    padding: 80px 0 0 0;
 }
 
 .section-header {
@@ -253,6 +253,7 @@ h1, h2, h3, h4, h5, h6 {
 /* About Section */
 #about {
     background: transparent;
+    padding-top: 0;
 }
 .about-photo-wrapper {
     text-align: center;
