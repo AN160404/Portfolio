@@ -1,0 +1,98 @@
+Prompt for Portfolio Website
+
+Create a modern, responsive, and professional personal portfolio website for Atia Naim.
+
+Sections to include:
+
+Home / Introduction
+
+Name: Atia Naim
+
+Tagline: Aspiring AI & Data Science Engineer | Generative AI | LLMs | Side-Channel Analysis
+
+Contact Info:
+
+Phone: +91 7413024000
+
+Email: atianaim87@gmail.com
+
+GitHub: github.com/AN160404
+
+LinkedIn: linkedin.com/in/atia-naim
+
+About Me
+
+A brief summary:
+Final year B.Tech Computer Science Engineering student at Amity University, passionate about AI, Data Science, NLP, and Generative AI. Skilled in building AI-driven frameworks, data pipelines, and innovative applications across healthcare, cryptography, and tourism domains. Experienced in research and internships at DRDO and active in community initiatives.
+
+Education
+
+B.Tech, CSE, Amity University, Noida (8.69/10, Aug 2022 – Jun 2026)
+
+CBSE Senior Secondary, Ahlcon Public School (2020–2022)
+
+Experience
+
+DRDO Intern (Jun–Jul 2025): Researched and implemented Conditional GANs for Side-Channel Analysis, tested on AES cryptographic datasets.
+
+Kind Beings NGO (Dec 2024–Mar 2025): Community volunteer – conducted literacy workshops, sustainable learning initiatives, and elderly engagement.
+
+Projects
+
+Medical Misconceptions Detector (Oct 2024–Jan 2025): Agentic LLM framework for validating medical misinformation; achieved 94% accuracy.
+
+Tranquil Trails (May–Jul 2024): RAG-based tourism chatbot with TTS and multilingual query support.
+
+Skills
+
+Languages: Python, C++, C, Java, SQL
+
+Frameworks: LangChain, HuggingFace Transformers, TensorFlow, Keras, Scikit-learn, Streamlit, NumPy, Pandas, Seaborn, Matplotlib, NLTK
+
+Databases: MySQL, MongoDB
+
+Tools: gTTS, Google Colab, Gemini API, Mistral API, Inference API, Tableau
+
+Expertise: LLMs, NLP, Prompt Engineering, Data Science, Machine Learning, Deep Learning, Generative AI
+
+Leadership & Achievements
+
+Emcee at Confluence 2025 (150+ participants)
+
+Hackfest Participant (Amity x GeeksforGeeks, Oct 2024)
+
+Student Coordinator, Amity Youth Fest 2024 (20+ events, 15,000+ attendees)
+
+Publications & Patents
+
+Patent: System for Real-Time Misconception Detection and Validation (May 2025)
+
+Co-Author: Beyond Reality: Unleashing the Potential of AR and VR (Cambridge Scholar, Oct 2024)
+
+Certifications
+
+Oracle Cloud Infrastructure Generative AI Professional (Aug 2025)
+
+Oracle Cloud Infrastructure AI Foundation Associate (Aug 2025)
+
+MongoDB (Coursera, Jan 2025)
+
+NPTEL Software Conceptual Design – Gold Badge (Nov 2024)
+
+NPTEL Python for Data Science (Apr 2024)
+
+Contact Form
+
+A simple section for visitors to send messages directly.
+
+Design Guidelines:
+
+Modern, minimal, and professional theme with AI/Data Science aesthetics (blues, purples, gradients).
+
+Include icons for GitHub and LinkedIn.
+
+Use a clean timeline for Experience and Education.
+
+Highlight Projects in interactive cards with expandable details.
+
+Keep Publications/Patents and Certificates in a neat grid layout.
