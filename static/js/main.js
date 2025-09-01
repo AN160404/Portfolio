@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initSmoothScrolling();
     initAnimations();
     initContactForm();
+    initCertificationModal();
 });
 
 // Navigation functionality
@@ -420,6 +421,170 @@ function initEasterEggs() {
 }
 
 initEasterEggs();
+
+// Certification Modal functionality
+function initCertificationModal() {
+    const certCards = document.querySelectorAll('.cert-card[data-cert]');
+    const modal = document.getElementById('certModal');
+    const closeBtn = document.querySelector('.cert-modal-close');
+    
+    if (!modal) return;
+
+    // Certification data
+    const certData = {
+        'oracle-gen-ai': {
+            title: 'Oracle Cloud Infrastructure Generative AI Professional',
+            date: 'August 2025',
+            icon: 'fas fa-cloud',
+            description: 'Advanced certification demonstrating expertise in Oracle Cloud\'s Generative AI services, including large language models, prompt engineering, and AI application development.',
+            skills: ['Generative AI', 'Oracle Cloud', 'LLMs', 'Prompt Engineering', 'AI Services', 'Cloud Computing'],
+            credentials: {
+                'Certification ID': 'OCI-GAI-PRO-2025',
+                'Valid Until': 'August 2027',
+                'Issued By': 'Oracle Corporation',
+                'Level': 'Professional'
+            }
+        },
+        'oracle-ai-foundation': {
+            title: 'Oracle Cloud Infrastructure AI Foundation Associate',
+            date: 'August 2025',
+            icon: 'fas fa-robot',
+            description: 'Foundational certification covering Oracle Cloud AI services, machine learning fundamentals, and AI infrastructure deployment.',
+            skills: ['Oracle Cloud', 'AI Foundations', 'Machine Learning', 'Cloud Infrastructure', 'Data Science'],
+            credentials: {
+                'Certification ID': 'OCI-AIF-ASC-2025',
+                'Valid Until': 'August 2027',
+                'Issued By': 'Oracle Corporation',
+                'Level': 'Associate'
+            }
+        },
+        'mongodb': {
+            title: 'MongoDB Database Administration',
+            date: 'January 2025',
+            icon: 'fas fa-database',
+            description: 'Comprehensive certification in MongoDB database administration, covering database design, performance optimization, and advanced querying techniques.',
+            skills: ['MongoDB', 'NoSQL', 'Database Design', 'Performance Tuning', 'Data Modeling', 'Aggregation'],
+            credentials: {
+                'Platform': 'Coursera',
+                'Completion Date': 'January 2025',
+                'Issued By': 'MongoDB University',
+                'Course Hours': '40+ Hours'
+            }
+        },
+        'nptel-design': {
+            title: 'NPTEL Software Conceptual Design',
+            date: 'November 2024',
+            icon: 'fas fa-medal',
+            description: 'Gold Badge certification in software conceptual design, covering advanced design patterns, system architecture, and software engineering principles.',
+            skills: ['Software Design', 'Design Patterns', 'System Architecture', 'UML', 'Software Engineering'],
+            credentials: {
+                'Badge': 'Gold',
+                'Score': '85%+',
+                'Issued By': 'NPTEL (IIT/IISc)',
+                'Course Duration': '12 Weeks'
+            }
+        },
+        'nptel-python': {
+            title: 'NPTEL Python for Data Science',
+            date: 'April 2024',
+            icon: 'fas fa-python',
+            description: 'Comprehensive certification in Python programming for data science applications, including data analysis, visualization, and machine learning fundamentals.',
+            skills: ['Python', 'Data Science', 'Data Analysis', 'Data Visualization', 'Pandas', 'NumPy', 'Matplotlib'],
+            credentials: {
+                'Completion Date': 'April 2024',
+                'Issued By': 'NPTEL (IIT/IISc)',
+                'Course Duration': '12 Weeks',
+                'Final Score': 'Distinction'
+            }
+        }
+    };
+
+    // Add click event listeners to certification cards
+    certCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const certId = this.getAttribute('data-cert');
+            const data = certData[certId];
+            
+            if (data) {
+                showCertModal(data);
+            }
+        });
+    });
+
+    // Close modal events
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeCertModal);
+    }
+
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeCertModal();
+        }
+    });
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('show')) {
+            closeCertModal();
+        }
+    });
+
+    function showCertModal(data) {
+        // Populate modal content
+        document.getElementById('modalIcon').className = data.icon;
+        document.getElementById('modalTitle').textContent = data.title;
+        document.getElementById('modalSubtitle').textContent = data.title;
+        document.getElementById('modalDate').textContent = `Completed: ${data.date}`;
+        
+        // Description
+        const descDiv = document.getElementById('modalDescription');
+        descDiv.innerHTML = `<div class="cert-description"><p>${data.description}</p></div>`;
+        
+        // Skills
+        const skillsDiv = document.getElementById('modalSkills');
+        const skillsHTML = data.skills.map(skill => 
+            `<span class="cert-skill-tag">${skill}</span>`
+        ).join('');
+        skillsDiv.innerHTML = `
+            <div class="cert-skills">
+                <h5>Skills & Technologies</h5>
+                ${skillsHTML}
+            </div>
+        `;
+        
+        // Credentials
+        const credDiv = document.getElementById('modalCredentials');
+        const credHTML = Object.entries(data.credentials).map(([key, value]) =>
+            `<div class="credential-item">
+                <span class="credential-label">${key}:</span>
+                <span class="credential-value">${value}</span>
+            </div>`
+        ).join('');
+        credDiv.innerHTML = `
+            <div class="cert-credentials">
+                <h5>Certification Details</h5>
+                ${credHTML}
+            </div>
+        `;
+        
+        // Show modal with animation
+        modal.style.display = 'flex';
+        setTimeout(() => {
+            modal.classList.add('show');
+        }, 10);
+        
+        // Prevent body scroll
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeCertModal() {
+        modal.classList.remove('show');
+        setTimeout(() => {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }, 400);
+    }
+}
 
 // Export functions for testing if needed
 if (typeof module !== 'undefined' && module.exports) {

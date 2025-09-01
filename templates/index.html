@@ -345,7 +345,7 @@
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="cert-card">
+                <div class="cert-card" data-cert="oracle-gen-ai" style="cursor: pointer;">
                     <div class="cert-icon">
                         <i class="fas fa-cloud"></i>
                     </div>
@@ -354,7 +354,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="cert-card">
+                <div class="cert-card" data-cert="oracle-ai-foundation" style="cursor: pointer;">
                     <div class="cert-icon">
                         <i class="fas fa-robot"></i>
                     </div>
@@ -363,7 +363,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="cert-card">
+                <div class="cert-card" data-cert="mongodb" style="cursor: pointer;">
                     <div class="cert-icon">
                         <i class="fas fa-database"></i>
                     </div>
@@ -372,7 +372,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="cert-card">
+                <div class="cert-card" data-cert="nptel-design" style="cursor: pointer;">
                     <div class="cert-icon">
                         <i class="fas fa-medal"></i>
                     </div>
@@ -381,7 +381,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="cert-card">
+                <div class="cert-card" data-cert="nptel-python" style="cursor: pointer;">
                     <div class="cert-icon">
                         <i class="fas fa-python"></i>
                     </div>
@@ -393,6 +393,27 @@
     </div>
 </section>
 
+<!-- Certification Modal -->
+<div id="certModal" class="cert-modal">
+    <div class="cert-modal-content">
+        <div class="cert-modal-header">
+            <span class="cert-modal-close">&times;</span>
+            <div class="cert-modal-icon">
+                <i id="modalIcon" class="fas fa-certificate"></i>
+            </div>
+            <h3 id="modalTitle">Certification Details</h3>
+        </div>
+        <div class="cert-modal-body">
+            <div class="cert-details">
+                <h4 id="modalSubtitle"></h4>
+                <p id="modalDate"></p>
+                <div id="modalDescription"></div>
+                <div id="modalSkills"></div>
+                <div id="modalCredentials"></div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Footer -->
 <footer class="footer">
