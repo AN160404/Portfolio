@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Flash Messages */
 .flash-messages {
     position: fixed;
-    top: 80px;
+    top: 20px;
     right: 20px;
     z-index: 1050;
     max-width: 400px;
